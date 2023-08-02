@@ -1,13 +1,13 @@
 import React from 'react'
 import HomeMain from '../components/HomeMain'
 import HeaderComponent from '../layouts/HeaderComponent'
+import { CitiesMain } from '../components/CitiesMain'
 
-
-export default function Home() {
+export const Cities = () => {
   return (
     <>
-    <HeaderComponent/>
-    <HomeMain/>
+      <CitiesMain/>
     </>
   )
 }
+
