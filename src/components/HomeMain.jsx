@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Carousel } from './Carousel';
+import { Slide } from './Slide';
+import { CarouselTail } from './Carousel';
 
  const HomeMain= () =>{
   return (
@@ -13,7 +14,7 @@ import { Carousel } from './Carousel';
             <p className='text-bold font-bold text-xl mt-10 mb-5 w-[85%] italic text-white' style={{textShadow: "#000 0 0 2px,#fff 1px 0 10px"}}>Find your perfect trip, designed by insiders who know and love their cities.</p>
             <button className="bg-[#4f46e5] hover:bg-[#2D23DF] text-base text-white font-bold py-2 px-7 rounded w-6/12 md:w-[45%]">View More</button>
           </div>
-         <Carousel></Carousel>
+         <CarouselTail/>
         </section>
       </main>
     </>
