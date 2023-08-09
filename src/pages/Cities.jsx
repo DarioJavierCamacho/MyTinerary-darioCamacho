@@ -1,13 +1,15 @@
 import React from 'react'
-import HomeMain from '../components/HomeMain'
 import HeaderComponent from '../layouts/HeaderComponent'
-import { CitiesMain } from '../components/CitiesMain'
+import CitiesMain  from '../components/CitiesMain'
+import FooterComponent from '../layouts/FooterComponent'
 
-export const Cities = () => {
+const  Cities = () => {
   return (
     <>
+      <HeaderComponent color="black"/>
       <CitiesMain/>
+      <FooterComponent text="black"/>
     </>
   )
 }
-
+export default Cities
