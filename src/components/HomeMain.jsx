@@ -14,7 +14,7 @@ const HomeMain = () => {
             <p className='mt-5 md:text-lg w-[85%] text-white' style={{ textShadow: "#000 0px 0 2px,#fff 1px 0 10px" }}>Our app will help you find the perfect path for your next trip. With an easy-to-use interface and a host of itinerary options, planning your next trip has never been easier.</p>
             <p className='text-bold font-bold text-xl mt-10 mb-5 w-[85%] italic text-white' style={{ textShadow: "#000 0 0 2px,#fff 1px 0 10px" }}>Find your perfect trip, designed by insiders who know and love their cities.</p>
             <button className="bg-[#4f46e5] hover:bg-[#2D23DF] text-base text-white font-bold py-2 px-7 rounded w-6/12 md:w-[45%]" onClick={() => navigate('/cities')}>View More</button>
-          </div>
+          </div>         
           <CarouselSwiper></CarouselSwiper>
         </section>
       </main>

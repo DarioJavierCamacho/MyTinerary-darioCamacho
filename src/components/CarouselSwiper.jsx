@@ -28,7 +28,8 @@ export default function CarouselSwiper() {
   })
 
   return (
-    <>
+    <div className="md:max-w-full md:w-3/5">
+      <h3 className="text-center text-white font-bold text-2xl">Popular Mytineraries</h3>
       <Swiper className="mySwiper w-full md:w-3/5"
         navigation={resized<768?false:true}
         modules={[Autoplay, Pagination, Navigation]}
@@ -48,6 +49,6 @@ export default function CarouselSwiper() {
         })
       }
       </Swiper>
-    </>
+    </div>
   );
 }
