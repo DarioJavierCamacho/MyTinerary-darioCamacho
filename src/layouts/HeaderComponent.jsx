@@ -1,12 +1,12 @@
 import { React, useState } from 'react'
 import { NavLink as Anchor } from 'react-router-dom';
-import avatar from '../assets/images/avatar.avif'
+
 
 const HeaderComponent = ({ text, background }) => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full shadow">
+    <nav className="w-full shadow h-[15vh]">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-2 md:py-5 md:block">
@@ -57,7 +57,7 @@ const HeaderComponent = ({ text, background }) => {
               }`}
           >
             <ul className="md:items-center justify-center flex flex-col md:flex-row ">
-              <li className='my-2'><a href='#' className={`mr-4  font-["Segoe UI"] font-bold text-base text-${text}`}>Home</a></li>
+              <li className='my-2'><Anchor to="/" className={`mr-4  font-["Segoe UI"] font-bold text-base text-${text}`}>Home</Anchor></li>
               <li className='my-2'><Anchor to="/cities" className={`mr-4  font-["Segoe UI"] font-bold text-base text-${text}`}>Cities</Anchor></li>
               <li className='my-2 flex flex-row'><button className='font-["Segoe UI"]  text-base flex flex-row justify-around gap-1 bg-[#4f46e5] hover:bg-[#2D23DF] text-white font-bold py-2 px-7 rounded'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
