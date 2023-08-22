@@ -27,13 +27,14 @@ export const CitiesMain = () => {
 
   return (
     <div className=' min-h-[70vh] w-full'>
-      <div className='w-full md:w-4/5 mx-auto mt-0'>
+      <div className='w-full md:w-4/5 mx-auto mt-12'>
         <Input color='blue' className='text-white' label='Search city...' onChange={handleChange} />
       </div>
-      
+      <h3 className='text-white text-center my-5 font-bold text-4xl' style={{ textShadow: "#000 0px 0 2px,#fff 1px 0 15px" }}>{cities.length>0?"":"No cities found"}</h3>
       <div className='flex flex-row flex-wrap justify-center my-5'>
         {cities.map((city) => <HorizontalCard cityName={city.city} photo={city.photo} country={city.country} description={city.smalldescription} id={city._id} />)}
       </div>
+      
     </div>
   )
 }

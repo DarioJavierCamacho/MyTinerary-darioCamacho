@@ -20,15 +20,15 @@ export function HorizontalCard({ cityName, photo, country, description, id }) { 
           className="h-full w-full object-cover"
         />
       </CardHeader>
-      <CardBody className="Flex flex-column justify-between">
-      <Typography variant="h6" color="gray" className="mb-4 uppercase">
-           {country}
+      <CardBody className="Flex flex-column justify-between grow" >
+        <Typography variant="h6" color="gray" className="mb-4 uppercase">
+          {country}
         </Typography>
         <Typography variant="h5" color="blue-gray" className="mb-2">
           {cityName}
         </Typography>
         <Typography>
-        {description}
+          {description}
         </Typography>
       </CardBody>
       <CardFooter className="pt-0">
