@@ -12,7 +12,7 @@ import {
 export function HorizontalCard({ cityName, photo, country, description, id }) { // Not horizontal xD
 
   return (
-    <Card className="mt-6 w-3/12 my-5 mx-2 overflow-hidden flex flex-column justify-between">
+    <Card className="mt-6 w-[90%] md:w-5/12 lg:w-3/12 my-5 mx-2 overflow-hidden flex flex-column justify-between">
       <CardHeader color="blue-gray" className="relative h-56 mt-0 mx-0 rounded-none">
         <img
           src={photo}

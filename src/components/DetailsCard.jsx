@@ -35,8 +35,11 @@ const DetailsCard = ({ detailsCity }) => {
                 <Typography className="mb-2" >
                     Population: <span className='font-bold text-black'>{detailsCity.population}</span>
                 </Typography>
-                <Typography className="mb-2">
+                <Typography className="mb-4">
                     Featured Location: <span className='font-bold text-black'>{detailsCity.featuredLocation}</span>
+                </Typography>
+                <Typography variant="h5" color="blue-gray" className="mb-2">
+                    Itineraries: <p className='text-black font-bold text-4xl'>Under Construction</p>
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">
