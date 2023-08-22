@@ -27,7 +27,7 @@ export const CitiesMain = () => {
 
   return (
     <div className=' min-h-[70vh] w-full'>
-      <div className='w-full md:w-4/5 mx-auto mt-12'>
+      <div className='w-full md:w-4/5 mx-auto mt-16'>
         <Input color='blue' className='text-white' label='Search city...' onChange={handleChange} />
       </div>
       <h3 className='text-white text-center my-5 font-bold text-4xl' style={{ textShadow: "#000 0px 0 2px,#fff 1px 0 15px" }}>{cities.length>0?"":"No cities found"}</h3>

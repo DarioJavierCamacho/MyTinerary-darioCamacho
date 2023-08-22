@@ -30,10 +30,10 @@ const DetailsCard = ({ detailsCity }) => {
                     {detailsCity.description}
                 </Typography >
                 <Typography className="mb-2" >
-                    Foundation:<span className='font-bold text-black'>{detailsCity.foundation}</span>
+                    Foundation: <span className='font-bold text-black'>{detailsCity.foundation}</span>
                 </Typography>
                 <Typography className="mb-2" >
-                    Population:<span className='font-bold text-black'>{detailsCity.population}</span>
+                    Population: <span className='font-bold text-black'>{detailsCity.population}</span>
                 </Typography>
                 <Typography className="mb-2">
                     Featured Location: <span className='font-bold text-black'>{detailsCity.featuredLocation}</span>
