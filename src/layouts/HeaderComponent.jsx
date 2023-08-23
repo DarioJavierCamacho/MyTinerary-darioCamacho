@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import { NavLink as Anchor } from 'react-router-dom';
-
+  
 
 const HeaderComponent = ({ text, background }) => {
   const [navbar, setNavbar] = useState(false);

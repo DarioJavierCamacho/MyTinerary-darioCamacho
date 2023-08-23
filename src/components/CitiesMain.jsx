@@ -10,7 +10,7 @@ export const CitiesMain = () => {
 
   const filterCities = (value) =>{
     setCities(backupCities.filter((data)=>{
-      return (data.city.toLowerCase().startsWith(value)||data.country.toLowerCase().startsWith(value))
+      return (data.city.toLowerCase().trim().startsWith(value.toLowerCase().trim())||data.country.toLowerCase().trim().startsWith(value.toLowerCase().trim()))
     }))
   }
   const handleChange = event =>{
