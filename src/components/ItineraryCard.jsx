@@ -31,7 +31,7 @@ const ItineraryCard = ({ itinerary }) => {
         />
       </CardHeader>
       <CardBody>
-        <div className="mb-3 flex items-center justify-between">
+        
           <Typography variant="h5" color="blue-gray" className="font-medium">
             {itinerary.name}
           </Typography>
@@ -43,7 +43,6 @@ const ItineraryCard = ({ itinerary }) => {
               {showPrice}
             </Typography>
           </Tooltip>
-        </div>
         <Typography
           color="blue-gray"
           className="flex items-center gap-1.5 font-normal"
