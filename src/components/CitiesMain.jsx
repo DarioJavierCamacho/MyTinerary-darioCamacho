@@ -13,7 +13,7 @@ export const CitiesMain = () => {
 
   const dispatch = useDispatch()
   const cities = useSelector(store => store.city.cities)
-  const backupCities = useSelector(store => store.city.backupCities)
+  //const backupCities = useSelector(store => store.city.backupCities)
   //const [cities, setCities] = useState([])
  // const [backupCities,setBackupCities]= useState([])
 
@@ -38,10 +38,9 @@ export const CitiesMain = () => {
       <div className='w-full md:w-4/5 mx-auto mt-10'>
         <Input color='blue' className='text-white' label='Search city...' onChange={handleChange} />
       </div>
-      <h3 className='text-white text-center mt-16 font-bold text-4xl'></h3>
+      <h3 className='text-white text-center mt-16 font-bold text-4xl' style={{ textShadow: "#000 0px 0 2px,#fff 1px 0 15px" }}>{!(cities.length>0)&&"No cities found"}</h3>
       <div className='flex flex-col md:flex-row flex-wrap md:justify-center my-5'>
         {cities.map((city) => <HorizontalCard key={city.city}cityName={city.city} photo={city.photo} country={city.country} description={city.smalldescription} id={city._id} />)}
-         {console.log("backupCities" , backupCities)} 
        </div>
       
     </div>

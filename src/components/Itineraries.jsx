@@ -1,21 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import ItineraryCard from './ItineraryCard'
-import axios from 'axios'
-const itineraryURL = "http://localhost:8081/api/itineraries"
+import { useDispatch,useSelector } from 'react-redux'
+import { getItinerariesAction } from '../redux/actions/itineraryActions'
 
 const Itineraries = ({ idCity = "" }) => {
 
-	const [itineraries, setItineraries] = useState([])
 
+	const itineraries = useSelector(store => store.itinerary	.itineraries)
+	const dispatch = useDispatch()
 	useEffect(() => {
-		axios(`${itineraryURL}/city/${idCity}`).then((res) => {
-			setItineraries(res.data.response)
-		})
+		dispatch(getItinerariesAction(idCity))
 	}, [idCity])
 
 	return (
-		<div className='flex flex-row wrap justify-around'>
-			{console.log(itineraries)}
+		<div className='flex flex-col md:flex-row wrap justify-around'>
 			{itineraries.map((itinerary, key) => {
 				return (<ItineraryCard key={key} itinerary={itinerary} />)
 			})}
