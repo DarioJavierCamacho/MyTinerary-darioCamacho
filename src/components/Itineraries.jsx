@@ -14,9 +14,9 @@ const Itineraries = ({ idCity = "" }) => {
 
 	return (
 		<div className='flex flex-col md:flex-row wrap justify-around'>
-			{itineraries.map((itinerary, key) => {
+			{itineraries.length>0?itineraries.map((itinerary, key) => {
 				return (<ItineraryCard key={key} itinerary={itinerary} />)
-			})}
+			}):<div className='py-5 px-auto text-4xl text-black'>No itineraries found for this city</div>}
 		</div>
 	)
 }
