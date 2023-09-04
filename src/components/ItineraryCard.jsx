@@ -58,7 +58,7 @@ const ItineraryCard = ({ itinerary }) => {
         </Typography>
         <Typography
           color="blue"
-          className="flex items-center gap-1.5 font-normal cursor-pointer"
+          className="flex items-center wrap gap-1.5 font-normal cursor-pointer"
         >
           {itinerary.hashtags.map((hashtag)=>`${hashtag} `)}
         </Typography>
