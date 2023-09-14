@@ -9,8 +9,18 @@ import {
     Button,
 } from "@material-tailwind/react";
 import Itineraries from './Itineraries';
+const initialCity = {
+    photo: "",
+    country: "",
+    city: "",
+    description: "",
+    foundation: "",
+    population: "",
+    featuredLocation: "",
+    _id: 0,
+}
 
-const DetailsCard = ({ detailsCity }) => {
+const DetailsCard = ({ detailsCity = initialCity }) => {
     return (
         <Card className="my-10 w-4/5 mx-auto overflow-hidden">
             <CardHeader color="blue-gray" className="h-2/5 mt-0 mx-0 rounded-none ">
@@ -43,7 +53,7 @@ const DetailsCard = ({ detailsCity }) => {
             <CardFooter className="pt-0">
                 <Anchor to="/cities"><Button>Back to cities</Button></Anchor>
             </CardFooter>
-            <Itineraries idCity={detailsCity._id}/>
+            <Itineraries idCity={detailsCity._id} />
         </Card>
     )
 }

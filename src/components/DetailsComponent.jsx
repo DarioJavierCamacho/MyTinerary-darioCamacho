@@ -9,13 +9,13 @@ export function DetailsComponent() {
   const dispatch = useDispatch();
   const city = useSelector(store => store.city.city)
   useEffect(() => {
-    dispatch(getCitiesIdAction(id))
+    if (id != undefined) dispatch(getCitiesIdAction(id))
   }, [])
 
 
 
   return (
-    <div className="min-h-[70vh] w-100">
+    <div className="min-h-[70vh] w-100 z-0">
       <DetailsCard detailsCity={city} />
     </div>
 

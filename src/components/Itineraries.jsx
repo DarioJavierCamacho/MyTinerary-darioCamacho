@@ -6,10 +6,10 @@ import { getItinerariesAction } from '../redux/actions/itineraryActions'
 const Itineraries = ({ idCity = "" }) => {
 
 
-	const itineraries = useSelector(store => store.itinerary	.itineraries)
+	const itineraries = useSelector(store => store.itinerary.itineraries)
 	const dispatch = useDispatch()
 	useEffect(() => {
-		dispatch(getItinerariesAction(idCity))
+		if(idCity!= "") dispatch(getItinerariesAction(idCity))
 	}, [idCity])
 
 	return (
